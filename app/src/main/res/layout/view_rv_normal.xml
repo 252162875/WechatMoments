@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_avator"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="昵称"
+        android:textColor="@color/colorNickBlue"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toRightOf="@+id/iv_avator"
+        app:layout_constraintTop_toTopOf="@+id/iv_avator" />
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="这是朋友圈发布的内容这是朋友圈发布的内容这是朋友圈发布的内容这是朋友圈发布的内容"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_nick"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nick" />
+
+    <com.jaeger.ninegridimageview.NineGridImageView
+        app:layout_constraintLeft_toLeftOf="@id/tv_nick"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_comment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+</android.support.constraint.ConstraintLayout>
